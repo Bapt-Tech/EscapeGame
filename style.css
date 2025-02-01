@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 0px 0px 10px gray;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Énigme 1</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Énigme 1 : La Salle des Archives</h1>
+        <p>Un message codé a été trouvé :</p>
+        <p><strong>"Fdvvlxv oh Shuilgh"</strong></p>
+        <button onclick="document.getElementById('menu').classList.toggle('show')">Aide/Astuce</button><div id="menu" class="menu-content" style="display:none; position:absolute; background:white; box-shadow:0px 4px 6px rgba(0,0,0,0.2);"><p>Une personnalité romaine est connue pour avoir crée son code. Essayez avec ce code !</p></div><script>document.addEventListener('click',function(e){if(!e.target.matches('button'))document.getElementById('menu').classList.remove('show');else document.getElementById('menu').style.display=document.getElementById('menu').classList.contains('show')?'block':'none';});</script>
+        <br>
+        <input type="text" id="reponse1" placeholder="Votre réponse">
+        <button onclick="verifierReponse(1)">Valider</button>
+        <p id="message1"></p>
+        <a id="next1" href="enigme2.html" class="btn hidden">Énigme suivante</a>
+    </div>
+</body>
+</html>
