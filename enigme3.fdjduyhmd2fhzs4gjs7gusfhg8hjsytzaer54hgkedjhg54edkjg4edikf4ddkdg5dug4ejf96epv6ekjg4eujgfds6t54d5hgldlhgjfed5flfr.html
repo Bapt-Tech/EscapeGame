@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,24 @@
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
+
 <body>
     <div class="container">
         <h1>Énigme Finale : Le Temple de Jupiter</h1>
         <p>Quel empereur a construit le Colisée ?</p>
-                <button onclick="document.getElementById('menu').classList.toggle('show')">Aide/Astuce</button><div id="menu" class="menu-content" style="display:none; position:absolute; background:white; box-shadow:0px 4px 6px rgba(0,0,0,0.2);"><p>Vous ne trouvez pas ? Vite ! Le temps presse ! Faites une recherche !</p></div><script>document.addEventListener('click',function(e){if(!e.target.matches('button'))document.getElementById('menu').classList.remove('show');else document.getElementById('menu').style.display=document.getElementById('menu').classList.contains('show')?'block':'none';});</script>
+        <button onclick="document.getElementById('menu').classList.toggle('show')">Aide/Astuce</button>
+        <div id="menu" class="menu-content"
+            style="display:none; position:absolute; background:white; box-shadow:0px 4px 6px rgba(0,0,0,0.2);">
+            <p>Vous ne trouvez pas ? Vite ! Le temps presse ! Faites une recherche !</p>
+        </div>
+        <script>document.addEventListener('click', function (e) { if (!e.target.matches('button')) document.getElementById('menu').classList.remove('show'); else document.getElementById('menu').style.display = document.getElementById('menu').classList.contains('show') ? 'block' : 'none'; });</script>
         <br>
         <input type="text" id="reponse3" placeholder="Votre réponse">
         <button onclick="verifierReponse(3)">Valider</button>
         <p id="message3"></p>
-        <a id="victory" href="victoire.kjxdhgmjjfjgndogjdugjjegksmsjfjheztuydsgmdgmosdedlkgfsogwsd.html" class="btn hidden">Voir le résultat</a>
+        <a id="victory" href="victoire.kjxdhgmjjfjgndogjdugjjegksmsjfjheztuydsgmdgmosdedlkgfsogwsd.html"
+            class="btn hidden">Voir le résultat</a>
     </div>
 </body>
+
 </html>
