@@ -13,7 +13,7 @@
         <img src="Marché.png" alt="Marché" class="fresque" style="width: 75%; height: auto; display: block; margin: auto;">
         <p>Observez bien l'image et trouvez les amphores, casques, boucliers et épées.</p>
         <p>Entrez le nombre d'exemplaires de chaque objet dans l'ordre : Amphores, Boucliers, Épées, Casques.</p>
-        <p>Vous ne trouvez pas ? Vous pouvez agrandir l'image avec la touche CTRL + Molette !</p>
+        <button onclick="document.getElementById('menu').classList.toggle('show')">Aide/Astuce</button><div id="menu" class="menu-content" style="display:none; position:absolute; background:white; box-shadow:0px 4px 6px rgba(0,0,0,0.2);"><p>Répartissez vous les taches ! Un participant peut chercher deux types d'objets, et un autre peut trouver les deux types restants.</p></div><script>document.addEventListener('click',function(e){if(!e.target.matches('button'))document.getElementById('menu').classList.remove('show');else document.getElementById('menu').style.display=document.getElementById('menu').classList.contains('show')?'block':'none';});</script>
         <input type="number" id="reponse2" placeholder="Code à 4 chiffres">
         <button onclick="verifierReponse(2)">Valider</button>
         <p id="message2"></p>
